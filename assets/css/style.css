@@ -12,7 +12,6 @@ body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
-
 h1,
 h2,
 h3,
@@ -26,6 +25,13 @@ a {
   color: #1e1e1e;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+.links{
+  color: #1e1e1e;
+  text-decoration-line: underline ;
+  text-decoration-color: #0078ff;
+  transition: all 0.5s ease-in-out;
+  text-decoration-thickness: 0.5px;
 }
 
 a:hover {
@@ -1480,4 +1486,29 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+.imgExperiences {  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "bspoke quatreD scf"
+    ". . ."
+    ". . .";
+}
+
+.bspoke { grid-area: bspoke;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.quatreD { grid-area: quatreD; 
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.scf { grid-area: scf; 
+  max-width: 100%;
+  max-height: 100%;
 }
